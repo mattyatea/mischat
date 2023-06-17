@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+:root {
+    transition: all 0.2s ease-in-out;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #2b2b2b;
+    color: aliceblue;
+    -webkit-tap-highlight-color: transparent;
+
+}
+html, body{
+    height: 100%;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 8px;
+}
+.header a:hover{
+    color: #3c3f40;
+    background-color: aliceblue;
+}
+a div{
+    border-radius: 0.3em;
+    transition:background-color .1s ;
+}
+img{
+    border-radius: 0.3em;
+    object-fit: cover;
+}
+a:hover div{
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+body {
+    transform: rotate(0.03deg);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .header{
+        position: fixed;
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 16px 16px 0  0 !important;
+        height: 8vh !important;
+        bottom: 0 ;
+        left: 0;
+        padding: 0 !important;
+    }
+    .header-item{
+        display: flex;
+        justify-content:space-around;
+        flex-direction: row !important;
+        padding: 8px 0 0 0   !important;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+    }
+
+    .header-item a{
+        padding: 0 16px  !important;
+        margin: 0  4px !important;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    a p {
+        display: none !important;
+    }
+    .header-item-btm{
+        display: none;
+    }
+    .main-item{
+        width: 90vw !important;
+        height: 85% !important;
+        margin: 16px  auto  !important;
+        padding: 0 !important;
+    }
+}
+.header{
+    background-color: #3c3f40;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+    width: 13vw;
+    margin: 16px;
+    height: auto;
+    border-radius: 8px;
+
+}
+@media screen and (min-width: 768px) {
+    .header{
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+}
+.header-item{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    padding: 8px;
+}
+.header-item a{
+    padding: 4px;
+    margin: 8px;
+    text-align: center;
+}
+.header-item-btm{
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+}
+.main-item{
+    margin: 16px;
+    background-color: #3c3f40;
+    width: 90vw;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: scroll;
+}
+input{
+    width: 300px;
+    color: aliceblue;
+    background-color: #2b2b2b;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #aaa;
+    background-color: #3b3b3b;
+
+}
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: aliceblue;
+}
+button:active{
+    background-color: #3b3b3b;
+}
+.modal::backdrop{
+    transition: color 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal{
+    text-align: center;
+    background-color: #3b3b3b;
+    border: 0;
+    color: aliceblue;
+    border-radius: 0.3em;
+}
+
+dialog[open] {
+    animation: FadeIn 0.2s ease normal;
+}
+
+@keyframes FadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+textarea{
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 95%;
+    color: aliceblue;
+    background-color: #2b2b2b;
+    height: 10%;
+    border-radius: 0.3em;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+resize: none;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid #aaa;
+    background-color: #3b3b3b;
+
+}
